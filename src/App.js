@@ -2,8 +2,7 @@ import React from "react";
 import { Route } from 'react-router-dom';
 import "./App.css";
 import Welcome from "./components/welcome/Welcome";
-import Clock from "./components/clock/Clock";
-import Contact from './components/contact/Contact';
+
 import Navigation from './components/navigation/Navigation';
 import Error from './components/error/Error'
 function App() {
@@ -17,8 +16,7 @@ function App() {
       />
       <Error/>
 
-      <Route path="/clock" component={Clock}/>
-      <Route path="/contact" component={Contact}/>
+    
     </div>
   );
 }
