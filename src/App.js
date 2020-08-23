@@ -1,11 +1,11 @@
 import React from "react";
-
 import { Route , Switch} from 'react-router-dom';
 import "./App.css";
 import Welcome from "./components/welcome/Welcome";
 import useParams from "react-router-dom"
 import Navigation from './components/navigation/Navigation';
 import Error from './components/error/Error'
+import Jeopardy from './components/jeopardy/Jeopardy'
 
 // function ID(){
 //   let { id } = useParams();
@@ -28,6 +28,8 @@ function App() {
       path="/" 
       render={(props)=> <Welcome {...props} name= "Patricia Simons"/>}
       />
+      <Route path='/Jep' component={Jeopardy}/>
+      
       
       < Route  path='/welcome/:name' component={Welcome} />
         
