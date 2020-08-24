@@ -28,9 +28,15 @@ class Jeopardy extends Component {
     }
     //display the results on the screen
     render() {
+        let category = "loading";
+        if (this.state.data.category) {
+            category = this.state.data.category.title
+        }
         return (
             <div>
-                {JSON.stringify(this.state.data)}
+                <strong>Category:</strong>{category}<br />
+                <strong>Question:</strong> {JSON.stringify(this.state.data.question)} <br />
+                <strong>Value:</strong>{JSON.stringify(this.state.data.value)}
             </div>
         );
     }
