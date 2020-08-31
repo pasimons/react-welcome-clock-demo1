@@ -37,8 +37,8 @@ class Jeopardy extends Component {
                 <strong>Category:</strong>{category}<br />
                 <strong>Question:</strong> {JSON.stringify(this.state.data.question)} <br />
                 <strong>Value:</strong>{JSON.stringify(this.state.data.value)}<br/>
-                <input></input>
-                <button>Submmit</button>
+               <input></input>
+                <button>Submit</button>
                 <strong>Users Score:</strong>{this.state.score}
             </div>
         );
