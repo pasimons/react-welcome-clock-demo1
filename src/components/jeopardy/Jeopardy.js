@@ -44,7 +44,7 @@ class Jeopardy extends Component {
           onChange={this.myChangeHandler}
         />
       </form>
-                <button>Submit</button>
+                <button onClick={this.submit}>Submit</button>
                 <strong>Users Score:</strong>{this.state.score}
             </div>
         );
